@@ -51,11 +51,14 @@ const BinarySearch=()=>{
                             if(index!==found[1])
                             element.style.backgroundColor="grey";
                           
-                        })
-                    
-                  
-                   
+                        }) 
                     elements[found[1]].style.backgroundColor="green";
+                }
+                if((mid===s||mid===e)&&found[0]===false){
+                    status.innerText="not found";
+                    Array.from(elements).forEach((element)=>{
+                        element.style.backgroundColor="grey";
+                    })
                 }
             },1000)
             
