@@ -1,0 +1,32 @@
+*{
+    font-family: sans-serif;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: ghostwhite;
+    text-align: center;
+    padding: 0.7rem;
+}
+.linear{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.array,.Binaryarray{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: honeydew;
+}
+.elements,.Belements{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: gold;
+}

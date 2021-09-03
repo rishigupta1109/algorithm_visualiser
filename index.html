@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm visualizer</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Algorithm Visualiser</h1>
+    </div>
+    <div class="container">
+        <div class="Search" >
+            <h1>Linear Search</h1>
+            <div class="linear">
+                <div class="linearSetting">
+                    <div class="linear"><h4>Elements</h4> <select name="noe" id="lsnoe">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select></div>
+                    <div class="linear"><h4>speed</h4> <select name="speed" id="lsspeed">
+                        <option value="2">fast</option>
+                        <option value="1">slow</option>
+                    </select></div>
+                    <div class="linear"><h4>key </h4><input type="number" name="key" id="linearkey"></div>
+                    <button id="linearStartBtn">Start</button>
+                    <button id="linearResetBtn">Reset</button>
+                </div>
+                <div class="linearAlgo">
+                    <div class="array">
+                      
+                    </div>
+                    <div class="linear">
+                        <h4>Status :</h4> <h4 id="linearStatus">Waiting to start</h4>
+                    </div>
+                </div>
+            </div>
+            <h1>Binary Search</h1>
+            <div class="linear">
+                <div class="linearSetting">
+                    <div class="linear"><h4>Elements</h4> <select name="noe" id="bsnoe">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select></div>
+                    <div class="linear"><h4>speed</h4> <select name="speed" id="bsspeed">
+                        <option value="2">fast</option>
+                        <option value="1">slow</option>
+                    </select></div>
+                    <div class="linear"><h4>key </h4><input type="number" name="key" id="binarykey"></div>
+                    <button id="BinaryStartBtn">Start</button>
+                    <button id="BinaryResetBtn">Reset</button>
+                </div>
+                <div class="BinaryAlgo">
+                    <div class="Binaryarray">
+                      
+                    </div>
+                    <div class="linear">
+                        <h4>Status :</h4> <h4 id="BinaryStatus">Waiting to start</h4>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="LinearSearch.js"></script>
+    <script src="BinarySearch.js"></script>
+</body>
+</html>
