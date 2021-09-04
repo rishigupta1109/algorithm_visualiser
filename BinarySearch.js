@@ -23,8 +23,13 @@ createArrayofB(numofelementsinB);
 
 
 const BinarySearch=()=>{
+    BinaryReset();
     console.log("Binary searching");
     let key=document.getElementById("binarykey").value;
+    if(key.trim()===""){
+        confirm("please write a key");
+        return;
+    }
     let speed=document.getElementById("bsspeed").value;
     let elements=document.getElementsByClassName("Belements");
     let found=[false,-1];
@@ -38,9 +43,9 @@ const BinarySearch=()=>{
         let e=end;
         setTimeout(()=>{
 
-            elements[mid].style.backgroundColor="blue";
-            elements[s].style.backgroundColor="red";
-            elements[e].style.backgroundColor="red";
+            elements[mid].style.backgroundColor="#d3b4f9";
+            elements[s].style.backgroundColor="#ff7f7f";
+            elements[e].style.backgroundColor="#ff7f7f";
             
             setTimeout(()=>{
                 if(s===found[1]||e===found[1]||mid===found[1]){
@@ -52,7 +57,7 @@ const BinarySearch=()=>{
                             element.style.backgroundColor="grey";
                           
                         }) 
-                    elements[found[1]].style.backgroundColor="green";
+                    elements[found[1]].style.backgroundColor="#8ad28a";
                 }
                 if((mid===s||mid===e)&&found[0]===false){
                     status.innerText="not found";
@@ -96,12 +101,15 @@ const BinarySearch=()=>{
         }
     }
 }
+const BinaryReset=()=>{
+    for(let j=0;j<BinaryArray.length;j++){
+        let status=document.getElementById("BinaryStatus");
+        let elements=document.getElementsByClassName("Belements");
+        elements[j].style.backgroundColor="gold";
+        status.innerText="Waiting to start";
+    }
+}
 let BinaryStartBtn=document.getElementById("BinaryStartBtn");
 let BinaryResetBtn=document.getElementById("BinaryResetBtn");
 BinaryStartBtn.onclick=BinarySearch;
-BinaryResetBtn.onclick=()=>{
-    for(let j=0;j<BinaryArray.length;j++){
-        let elements=document.getElementsByClassName("Belements");
-        elements[j].style.backgroundColor="gold";
-    }
-}
+BinaryResetBtn.onclick=BinaryReset;

@@ -18,8 +18,13 @@ createArray(numofelements);
 
 
 const LinearSearch=()=>{
+linearreset();
     console.log("searching");
     let key=document.getElementById("linearkey").value;
+    if(key.trim()===""){
+        confirm("please write a key");
+        return;
+    }
     let speed=document.getElementById("lsspeed").value;
     let elements=document.getElementsByClassName("elements");
     let found=[false,-1];
@@ -34,9 +39,9 @@ const LinearSearch=()=>{
             if(i===elements.length-1&&found[0]===false){
                 status.innerText="not found";
             }
-            elements[i].style.backgroundColor="red";
+            elements[i].style.backgroundColor="#ff7f7f";
             if(found[1]===i){
-                elements[i].style.backgroundColor="green";
+                elements[i].style.backgroundColor="#8ad28a";
                 status.innerText="found";
             }
         },(1200/speed)*i);
@@ -49,15 +54,16 @@ const LinearSearch=()=>{
     
 
 }
+const linearreset=()=>{
+    let elements=document.getElementsByClassName("elements");
+    Array.from(elements).forEach((element)=>{
+          element.style.backgroundColor="gold";
+          let status=document.getElementById("linearStatus");
+          status.innerText="Waiting to start";
+          
+    })  
+  }
 let linearStartBtn=document.getElementById("linearStartBtn");
 let linearResetBtn=document.getElementById("linearResetBtn");
-linearResetBtn.onclick=()=>{
-  let elements=document.getElementsByClassName("elements");
-  Array.from(elements).forEach((element)=>{
-        element.style.backgroundColor="gold";
-        let status=document.getElementById("linearStatus");
-        status.innerText="Waiting to start";
-        document.getElementById("linearkey").value="";
-  })  
-}
+linearResetBtn.onclick=linearreset;
 linearStartBtn.onclick=LinearSearch;
