@@ -90,7 +90,7 @@ const BinarySearch=()=>{
             break;
         }
         else if(BinaryArray[mid]===Number(key)){
-            found[true,mid];
+            found=[true,mid];
             break;
         }
         if(BinaryArray[mid]>key){
