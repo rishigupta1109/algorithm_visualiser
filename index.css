@@ -11,14 +11,14 @@ html,body{
     text-align: center;
     padding: 0.7rem;
 }
-.linear{
+.linear,.Bubble{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
-.array,.Binaryarray{
+.array,.Binaryarray,.Bubblearray{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +27,7 @@ html,body{
     border: black 2px solid;
     border-radius: 10px;
 }
-.elements,.Belements{
+.elements,.Belements,.bubbleelements{
     padding: 10px;
     margin: 5px;
     border-radius: 4px;
@@ -36,14 +36,14 @@ html,body{
     font-weight: bolder;
     background-color: gold;
 }
-.Search{
+.Search,.sort{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+    align-items: normal;
+    text-align-last: center;
 }
-.linearSetting{
+.linearSetting,.BubbleSetting{
     margin: 10px 150px 50px 150px;
 }
 input[type="number"],select{

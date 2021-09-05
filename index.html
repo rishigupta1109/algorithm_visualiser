@@ -12,8 +12,9 @@
         <h1>Algorithm Visualiser</h1>
     </div>
     <div class="container">
+        <h1 style="text-align: center;"> Searching Algorithms</h1>
         <div class="Search" >
-            <h1>Linear Search</h1>
+            <h2>Linear Search</h2>
             <div class="linear">
                 <div class="linearSetting">
                     <div class="linear"><h4>Elements</h4> <select name="noe" id="lsnoe">
@@ -37,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <h1>Binary Search</h1>
+            <h2>Binary Search</h2>
             <div class="linear">
                 <div class="linearSetting">
                     <div class="linear"><h4>Elements</h4> <select name="noe" id="bsnoe">
@@ -64,8 +65,34 @@
 
             
         </div>
+        <div class="sort">
+            <h2>Bubble Sort</h2>
+            <div class="Bubble">
+                <div class="BubbleSetting">
+                    <div class="Bubble"><h4>Elements</h4> <select name="noe" id="bblsnoe">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select></div>
+                    <div class="Bubble"><h4>speed</h4> <select name="speed" id="bblsspeed">
+                        <option value="1.5">fast</option>
+                        <option value="1">slow</option>
+                    </select></div>
+                    <button id="BubbleStartBtn">Start</button>
+                    <button id="BubbleResetBtn">Reset</button>
+                </div>
+                <div class="BubbleAlgo">
+                    <div class="Bubblearray">
+                      
+                    </div>
+                    <div class="Bubble">
+                        <h4>Status :</h4> <h4 id="BubbleStatus">Waiting to start</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="LinearSearch.js"></script>
     <script src="BinarySearch.js"></script>
+    <script src="BubbleSort.js"></script>
 </body>
 </html>
