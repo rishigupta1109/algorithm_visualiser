@@ -23,11 +23,11 @@ const BubbleSort=()=>{
     let speed=document.getElementById("bblsspeed").value;
     let status=document.getElementById("BubbleStatus");
     let breakpoint=[false,-1,-1];
-    status.innerText="wait 2 seconds";
-    for(let i=1;i<elements.length;i++){
+    status.innerText="running";
+    for(let i=0;i<elements.length-1;i++){
         let x=true;
        
-        for( let j=1;j<=elements.length-i;j++){
+        for( let j=1;j<elements.length-i;j++){
             
             setTimeout(()=>{
                 if(i==1&&j==1){
