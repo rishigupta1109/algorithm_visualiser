@@ -65,7 +65,7 @@ button{
     cursor: pointer;
 }
 @media (max-width:600px) {
-    .elements, .Belements, .bubbleelements {
+    .elements, .Belements, .bubbleelements ,.selectionelements{
         padding: 10px;
         margin: 3px;
         border-radius: 4px;
