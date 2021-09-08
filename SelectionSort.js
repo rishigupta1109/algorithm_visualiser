@@ -64,6 +64,7 @@ const SelectionSort=()=>{
     }
     setTimeout(()=>{
         elements[0].style.backgroundColor="#95f195";
+        status.innerText="sorted";
 
     },(500/speed)*(elements.length-1)+5000*(elements.length-2)+2000)
 }
