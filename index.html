@@ -66,6 +66,7 @@
             
         </div>
         <div class="sort">
+            <h1>Sorting Algorithms</h1>
             <h2>Bubble Sort</h2>
             <div class="Bubble">
                 <div class="BubbleSetting">
@@ -89,10 +90,34 @@
                     </div>
                 </div>
             </div>
+            <h2>Selection Sort</h2>
+            <div class="Selection">
+                <div class="SelectionSetting">
+                    <div class="Selection"><h4>Elements</h4> <select name="noe" id="ssnoe">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select></div>
+                    <div class="Selection"><h4>speed</h4> <select name="speed" id="ssspeed">
+                        <option value="1.5">fast</option>
+                        <option value="1">slow</option>
+                    </select></div>
+                    <button id="SelectionStartBtn">Start</button>
+                    <button id="SelectionResetBtn">Reset</button>
+                </div>
+                <div class="SelectionAlgo">
+                    <div class="Selectionarray">
+                      
+                    </div>
+                    <div class="Selection">
+                        <h4>Status :</h4> <h4 id="SelectionStatus">Waiting to start</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="LinearSearch.js"></script>
     <script src="BinarySearch.js"></script>
     <script src="BubbleSort.js"></script>
+    <script src="SelectionSort.js"></script>
 </body>
 </html>

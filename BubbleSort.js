@@ -36,8 +36,8 @@ const BubbleSort=()=>{
                 if(j!=1){
                     elements[j-2].style.backgroundColor="gold";
                 }
-                elements[j-1].style.backgroundColor="red";
-                elements[j].style.backgroundColor="red";
+                elements[j-1].style.backgroundColor="#ff6565";
+                elements[j].style.backgroundColor="#ff6565";
             },(((400/speed)*j)+(4000*i)));
             if(Bubblearray[j-1]>Bubblearray[j]){
                 let temp=Bubblearray[j-1];
@@ -57,6 +57,9 @@ const BubbleSort=()=>{
             Array.from(elements).forEach((element)=>{
                 element.style.backgroundColor="gold";
             })
+            for(let k=elements.length-i-1;k<elements.length;k++){
+                elements[k].style.backgroundColor="lightgreen";
+            }
         },(((400/speed)*(elements.length-1))+(4000*i)+200));
        
         if(x){

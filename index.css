@@ -11,14 +11,14 @@ html,body{
     text-align: center;
     padding: 0.7rem;
 }
-.linear,.Bubble{
+.linear,.Bubble,.Selection{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
-.array,.Binaryarray,.Bubblearray{
+.array,.Binaryarray,.Bubblearray,.Selectionarray{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +27,7 @@ html,body{
     border: black 2px solid;
     border-radius: 10px;
 }
-.elements,.Belements,.bubbleelements{
+.elements,.Belements,.bubbleelements,.selectionelements{
     padding: 10px;
     margin: 5px;
     border-radius: 4px;
@@ -43,7 +43,7 @@ html,body{
     align-items: normal;
     text-align-last: center;
 }
-.linearSetting,.BubbleSetting{
+.linearSetting,.BubbleSetting,.SelectionSetting{
     margin: 10px 150px 50px 150px;
 }
 input[type="number"],select{
