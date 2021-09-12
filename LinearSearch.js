@@ -22,7 +22,7 @@ linearreset();
     console.log("searching");
     let key=document.getElementById("linearkey").value;
     if(key.trim()===""){
-        confirm("please write a key");
+        alert("please write a key");
         return;
     }
     let speed=document.getElementById("lsspeed").value;

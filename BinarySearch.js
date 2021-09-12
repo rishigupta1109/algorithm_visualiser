@@ -27,7 +27,7 @@ const BinarySearch=()=>{
     console.log("Binary searching");
     let key=document.getElementById("binarykey").value;
     if(key.trim()===""){
-        confirm("please write a key");
+        alert("please write a key");
         return;
     }
     let speed=document.getElementById("bsspeed").value;
