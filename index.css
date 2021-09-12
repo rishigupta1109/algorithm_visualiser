@@ -73,7 +73,7 @@ button{
     cursor: pointer;
 }
 @media (max-width:600px) {
-    .elements, .Belements, .bubbleelements ,.selectionelements{
+    .elements, .Belements, .bubbleelements ,.selectionelements,.Insertionelements{
         padding: 10px;
         margin: 3px;
         border-radius: 4px;
@@ -93,4 +93,20 @@ button{
             justify-content: space-around;
             align-items: center;
     }
+    .array, .Binaryarray, .Bubblearray, .Selectionarray, .Insertionarray {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: black 2px solid;
+        margin: 50px 0;
+        border-radius: 10px;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

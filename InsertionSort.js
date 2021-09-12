@@ -80,7 +80,7 @@ const InsertionSort=()=>{
             element.style.backgroundColor="#77ed77";
             status.innerText="sorted";
         })
-    },5000*speed*(Insertionarray.length-2)+500*speed*exitj+2000);
+    },5000*speed*(Insertionarray.length-2)+500*speed*(exitj+1)+2500);
    
 }
 
